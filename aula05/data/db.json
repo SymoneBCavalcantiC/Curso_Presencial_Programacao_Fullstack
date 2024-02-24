@@ -1,0 +1,80 @@
+{
+  "alunos": [
+    {
+      "id": "1",
+      "nome": "João",
+      "email": "joao@gmail.com"
+    },
+    {
+      "id": "2",
+      "nome": "Maria",
+      "email": "maria@gmail.com"
+    },
+    {
+      "id": "3",
+      "nome": "Jose",
+      "email": "jose@gmail.com"
+    },
+    {
+      "id": "4",
+      "nome": "Pilar",
+      "email": "pilarica@gmail.com"
+    },
+    {
+      "id": "5",
+      "nome": "Fabio",
+      "email": "fabinho@gmail.com"
+    },
+    {
+      "id": "8398",
+      "nome": "Priscila",
+      "email": "priscila@hotmail.com"
+    },
+    {
+      "id": "1c20",
+      "nome": "Priscila",
+      "email": "priscila@hotmail.com"
+    },
+    {
+      "id": "0e8d",
+      "nome": "Priscila",
+      "email": "priscila@hotmail.com"
+    }
+  ],
+  "professor": [
+    {
+      "id": "1",
+      "nome": "Kelson Almeida",
+      "email": "kelsonalmeida@gmail.com"
+    },
+    {
+      "id": "2",
+      "nome": "Angelo Francescoli",
+      "email": "angelof@gmail.com"
+    },
+    {
+      "id": "3",
+      "nome": "Messias",
+      "email": "messi@gmail.com"
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "CIS abre agendamento  para atendimentos em Odontologia",
+      "texto": "O serviço é realizado por alunos a partir do 6º período, supervisionados por professores das diversas áreas oferecidas."
+    },
+
+    {
+      "id": 2,
+      "titulo": "COOPERE lança edital de submissão de TCCs para a revista Diálogos Científicos",
+      "texto": "O objetivo do edital é incentivar a produção científica entre os estudantes de graduação."
+    },
+
+    {
+      "id": 3,
+      "titulo": "PAI abre chamada para seleção de novos participantes para semestre 2024.1",
+      "texto": "Serão disponibilizadas 25 vagas, das quais 20 são para exercícios das atividades de extensão e 5 para cadastro de reserva."
+    }
+  ]
+}
