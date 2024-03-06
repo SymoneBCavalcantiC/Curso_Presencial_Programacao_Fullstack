@@ -1,0 +1,28 @@
+{
+  "suppliers": [
+    {
+      "id": "1",
+      "name": "Urbano LTDA",
+      "cnpj": "74.917.738/0001-54",
+      "email": "sac@urbano.com.br"
+    },
+    {
+      "id": "2",
+      "name": "Tio João LTDA",
+      "cnpj": "25.638.016/0001-55",
+      "email": "sac@tiojoao.com.br"
+    },
+    {
+      "id": "3",
+      "name": "Guaraves LTDA",
+      "cnpj": "67.520.697/0001-00",
+      "email": "sac@guaraves.com.br"
+    },
+    {
+      "id": "5370",
+      "name": "JBC Contabil",
+      "cnpj": "49.289.939/0001-07",
+      "email": "sbcavalcantic@gmail.com"
+    }
+  ]
+}
