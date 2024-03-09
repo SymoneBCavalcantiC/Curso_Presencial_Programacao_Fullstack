@@ -17,38 +17,50 @@
       "name": "Guaraves LTDA",
       "cnpj": "67.520.697/0001-00",
       "email": "sac@guaraves.com.br"
+    },
+    {
+      "name": "Vitarella Massas LTDA",
+      "cnpj": "91.676.640/0001-71",
+      "email": "sac@vitarella.com.br",
+      "id": "S4unc4L"
     }
   ],
   "products": [
     {
       "id": 100,
-      "name": "Arroz branco tipo I",
-      "price": 5,
-      "SupplierId": 1
+      "name": "Arroz branco 1kg",
+      "price": "5,50",
+      "supplierId": 1
     },
     {
       "id": 101,
-      "name": "Feijão preto",
+      "name": "Feijão preto 1kg",
       "price": 8,
-      "SupplierId": "1"
+      "supplierId": "1"
     },
     {
       "id": 102,
-      "name": "Feijão carioca",
+      "name": "Feijão carioca 1kg",
       "price": 7,
-      "SupplierId": "2"
+      "supplierId": "2"
     },
     {
       "id": 103,
-      "name": "Grão de bico",
-      "price": 6,
-      "SupplierId": "2"
+      "name": "Grão de bico 500g",
+      "price": "6,75",
+      "supplierId": "2"
     },
     {
-      "name": "Fusili integral",
-      "price": "7",
-      "supplierId": "2",
-      "id": "8awIYNz"
+      "name": "Peito de Frango 1kg",
+      "price": "17,00",
+      "supplierId": "3",
+      "id": 104
+    },
+    {
+      "name": "Linguini integral 250g",
+      "price": "5,25",
+      "supplierId": "S4unc4L",
+      "id": 105
     }
   ]
 }
