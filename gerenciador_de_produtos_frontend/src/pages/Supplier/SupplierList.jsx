@@ -11,26 +11,26 @@ const SupplierList = () => {
     useEffect(() => {
         axios.get('/suppliers')
             .then(response => {
-                setSuppliers(response.data);
+                setSuppliers(response.data)
             })
-            .catch(error => console.error("Houve um erro: ", error));
+            .catch(error => console.error("Houve um erro: ", error))
     },[]);
 
     const fetchSuppliers = () => {
-        axios.get('/suppliers')
+    axios.get('/suppliers')
         .then(response => {
-            setSuppliers(response.data);
+            setSuppliers(response.data)
         })
-        .catch(error => console.error("Houve yum erro: ", error));
-    };
+        .catch(error => console.error("Houve um erro: ", error))
+    }
 
     function deleteSupplier(id) {
         axios.delete(`/suppliers/${id}`)
-            .then(() => {
-                alert("Fornecedor excluído com sucesso!");
-                fetchSuppliers();
-            })
-            .catch(error => console.error("Houve um erro: ", error));
+        .then(() => {
+            alert("Fornecedor excluído com sucesso!")
+            fetchSuppliers()
+        })
+        .catch(error => console.error("Houve um erro: ", error))
     }
 
   return (

@@ -8,7 +8,7 @@ const SupplierForm = () => {
 
     const [supplier, setSupplier] = useState({name: '', cnpj: '', email: ''})
     const navigate = useNavigate()
-    const {id} = useParams()
+    const { id } = useParams()
 
     useEffect(() => {
         if (id) {
@@ -17,6 +17,8 @@ const SupplierForm = () => {
                 setSupplier(response.data)
             })
             .catch(error => console.error('Erro ao buscar fornecedor', error))
+        } else {
+            setSupplier({ name: '', cnpj: '', email:''})
         }
     }, [id])
 
@@ -35,7 +37,7 @@ const SupplierForm = () => {
                 alert(`Fornecedor ${id ? 'atualizado' : 'adicionado'} com sucesso!`)
                 navigate("/listar-fornecedores")
             })
-            .catch(error => console.error("Houve um erro: ", error));
+            .catch(error => console.error("Houve um erro: ", error))
     }
 
   return (
@@ -43,21 +45,21 @@ const SupplierForm = () => {
         <h2>{id ? 'Editar' : 'Adicionar'} Fornecedor</h2>
         <form onSubmit={handleSubmit}>
             <div className='form-group'>
-                <label htmlFor="name">Nome do Fornecedor:</label>
+                <label htmlFor="name">Nome do Fornecedor</label>
                 <input type='text' className='form-control' id='name' name='name' value={supplier.name} onChange={handleChange} required />
             </div>
 
             <div className='form-group'>
-                <label htmlFor="cnpj">CNPJ do fornecedor:</label>
+                <label htmlFor="cnpj">CNPJ do fornecedor</label>
                 <input type='text' className='form-control' id='cnpj' name='cnpj' value={supplier.cnpj} onChange={handleChange} required />
             </div>
 
             <div className='form-group'>
-                <label htmlFor="email">E-mail do fornecedor:</label>
+                <label htmlFor="email">E-mail do fornecedor</label>
                 <input type='text' className='form-control' id='email' name='email' value={supplier.email} onChange={handleChange} required />
             </div>
 
-            <button type="submit" className="btn btn-success">{id ? 'Atualizar' : 'Adicionar'}</button>
+            <button type="submit" className="btn btn-success">Adicionar</button>
         </form>
         
     </div>

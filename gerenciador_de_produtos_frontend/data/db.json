@@ -18,5 +18,37 @@
       "cnpj": "67.520.697/0001-00",
       "email": "sac@guaraves.com.br"
     }
+  ],
+  "products": [
+    {
+      "id": 100,
+      "name": "Arroz branco tipo I",
+      "price": 5,
+      "SupplierId": 1
+    },
+    {
+      "id": 101,
+      "name": "Feijão preto",
+      "price": 8,
+      "SupplierId": "1"
+    },
+    {
+      "id": 102,
+      "name": "Feijão carioca",
+      "price": 7,
+      "SupplierId": "2"
+    },
+    {
+      "id": 103,
+      "name": "Grão de bico",
+      "price": 6,
+      "SupplierId": "2"
+    },
+    {
+      "name": "Fusili integral",
+      "price": "7",
+      "supplierId": "2",
+      "id": "8awIYNz"
+    }
   ]
 }
