@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react' 
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from '../../api'
 
@@ -9,26 +10,27 @@ const ProductList = () => {
 
     useEffect(() => {
         axios.get('/products?_expand=supplier')
-            .then(response => {setProducts(response.data);
+        .then(response => {
+            setProducts(response.data)
             })
-            .catch(error => console.error("Houve um erro: ", error));
+        .catch(error => console.error("Ocorreu um erro: ", error))
     }, []);
 
     const fetchProducts = () => {
         axios.get('/products?_expand=supplier')
-        .then(response => {
-            setProducts(response.data);
-        })
-        .catch(error => console.error("Houve um erro: ", error));
-    };
+            .then(response => {
+                setProducts(response.data)
+            })
+            .catch(error => console.error("Houve um erro: ", error))
+        }
 
     function deleteProduct(id) {
         axios.delete(`/products/${id}`)
-            .then(() => {
-                alert("Produto excluído com sucesso!")
-                fetchProducts()
-            })
-            .catch(error => console.error("Houve um erro: ", error))
+        .then(() => {
+            alert("Produto excluído com sucesso!")
+            fetchProducts()
+        })
+        .catch(error => console.error("Houve um erro: ", error))
     }
 
 

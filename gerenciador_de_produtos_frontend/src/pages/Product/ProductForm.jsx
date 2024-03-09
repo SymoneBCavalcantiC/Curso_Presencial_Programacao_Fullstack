@@ -7,7 +7,7 @@ const ProductForm = () => {
     const [product, setProduct] = useState({name: '', price: '', supplierId: ''})
     const [suppliers, setSuppliers] = useState([])
     const navigate = useNavigate()
-    const {id} = useParams()
+    const { id } = useParams()
 
     useEffect(() => {
 
@@ -40,11 +40,11 @@ const ProductForm = () => {
         const url = id ? `/products/${id}` : '/products'
 
         axios[method](url, product)
-            .then(() => {
-                alert(`Produto ${id ? 'atualizado' : 'adicionado'} com sucesso!`)
-                navigate("/listar-produtos")
-            })
-            .catch(error => console.error("Houve um erro: ", error));
+        .then(() => {
+            alert(`Produto ${id ? 'atualizado' : 'adicionado'} com sucesso!`)
+            navigate("/listar-produtos")
+        })
+        .catch(error => console.error("Houve um erro: ", error))
     }
 
 
@@ -52,7 +52,7 @@ const ProductForm = () => {
   return (
     
     <div className='container mt-5'>
-        <h2>{id ? 'Editar' : 'Adicionar'} Produto</h2>
+        <h2>{id ? 'Editar Produto' : 'Adicionar Produto'}</h2>
         <form onSubmit={handleSubmit}>
             <div className='form-group'>
                 <label htmlFor="name">Nome do Produto</label>
@@ -67,13 +67,14 @@ const ProductForm = () => {
             <div className='form-group'>
                 <label htmlFor='supplierId'>Fornecedor</label>
                 <select 
-                className='form-control'
-                id='supplierId'
-                name='supplierId'
-                value={product.supplierId}
-                onChange={handleChange}
-                required
-                >
+                    className='form-control'
+                    id='supplierId'
+                    name='supplierId'
+                    value={product.supplierId}
+                    onChange={handleChange}
+                    required
+                    >
+
                 <option value=''>Clique para selecionar um fornecedor</option>
                 {
                     suppliers.map(supplier => (
@@ -85,7 +86,6 @@ const ProductForm = () => {
                 }
                 </select>
             </div>
-
             <button type="submit" className="btn btn-success">{id ? 'Atualizar' : 'Adicionar'}</button>
         </form>
         
