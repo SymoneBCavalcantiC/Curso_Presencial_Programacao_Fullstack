@@ -25,6 +25,7 @@
       "id": "S4unc4L"
     }
   ],
+  
   "products": [
     {
       "id": 100,
@@ -61,6 +62,74 @@
       "price": "5,25",
       "supplierId": "S4unc4L",
       "id": 105
+    }
+  ],
+
+  "costumers": [
+    {
+      "id": 1,
+      "name": "Pilar",
+      "cpf": "352.170.382-76",
+      "email": "pilarica@gmail.com",
+      "zipcode": "88.138-370",
+      "street": "Rua Oscar Martinho Ribeiro",
+      "number": "1503",
+      "neighborhood": "Praia de Fora",
+      "city": "Palhoça",
+      "state": "Santa Catarina",
+      "country": "Brasil"
+    },
+    {
+      "id": 2,
+      "name": "Fábio",
+      "cpf": "178.563.141-17",
+      "email": "fabinho@gmail.com",
+      "zipcode": "91.420-625",
+      "street": "Rua Sargento-Expedicionário Geraldo Santana",
+      "number": "1050",
+      "neighborhood": "Partenon",
+      "city": "Porto Alegre",
+      "state": "Rio Grande do Sul",
+      "country": "Brasil"
+    },
+    {
+      "id": 3,
+      "name": "Josileide",
+      "cpf": "265.976.336-44",
+      "email": "mainha@gmail.com",
+      "zipcode": "58.058-812",
+      "street": "Rua Maestro Joaquim Pereira",
+      "number": "106",
+      "neighborhood": "Mangabeira IV",
+      "city": "João Pessoa",
+      "state": "Paraíba",
+      "country": "Brasil"
+    },
+    {
+      "id": 4,
+      "name": "Priscila",
+      "cpf": "764.834.222-70",
+      "email": "pinto@gmail.com",
+      "zipcode": "41.620-690",
+      "street": "Primeira Travessa do Palame",
+      "number": "681",
+      "neighborhood": "Itapuâ",
+      "city": "Salvador",
+      "state": "Bahia",
+      "country": "Brasil"
+    },
+    {
+      "id": 5,
+      "name": "Eduardo Flávio",
+      "cpf": "070.248.679-57",
+      "email": "edflavio@gmail.com",
+      "zipcode": "71.515-706", 
+      "street": "Quadra SHIN EQL 9/11",
+      "number": "5500",
+      "neighborhood": "Setor de Habitações Individuais Norte",
+      "city": "Brasília",
+      "state": "Distrito Federal",
+      "country": "Brasil"
     }
   ]
 }
