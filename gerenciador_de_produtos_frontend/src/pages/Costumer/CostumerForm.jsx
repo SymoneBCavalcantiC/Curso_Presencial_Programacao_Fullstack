@@ -7,7 +7,7 @@ const CostumerForm = () => {
     const [costumer, setCostumer] = useState({name: '', cpf: '', email: '', zipcode: '', street: '', number: '', neighborhood: '', city: '', state: '', country: ''})
     const navigate = useNavigate()
     const { id } = useParams()
-    const [ceploading, setCeploading] = useState(false)
+    const [cepLoading, setCepLoading] = useState(false)
 
     useEffect(() => {
 
@@ -44,18 +44,18 @@ const CostumerForm = () => {
     function handleCepBlur(event) {
         //Vai consultar a API dos Correios 
         const cep = event.target.value.replace(/\D/g, '')
-        if (cep.lenght !== 8) {
+        if (cep.length !== 8) {
             alert("CEP deve contém 8 dígitos. Redigite")
             return
         }
 
-        setCeploading(true)
+        setCepLoading(true)
 
         axios.get(`http://viacep.com.br/ws/${cep}/json/`)
         .then(response => {
             if (response.data.erro) {
                 alert("CEP não localizado")
-                setCeploading(false)
+                setCepLoading(false)
                 return
             }
 
@@ -68,12 +68,12 @@ const CostumerForm = () => {
                 country: 'Brasil'
             }))
 
-            setCeploading(false)
+            setCepLoading(false)
         })
 
         .catch(error => {
             console.log("Erro ao buscar o CEP: ", error)
-            setCeploading(false)
+            setCepLoading(false)
         })
     }
 
@@ -101,7 +101,7 @@ const CostumerForm = () => {
 
             <div className='form-group'>
                 <label htmlFor="zipcode">CEP</label>
-                <input type='text' className='form-control' id='cep' name='cep' value={costumer.zipcode} onChange={handleChange} onBlur={handleCelBlur}required />
+                <input type='text' className='form-control' id='zipcode' name='zipcode' value={costumer.zipcode} onChange={handleChange} onBlur={handleCepBlur}required />
                 {cepLoading && <p>Buscando CEP...</p>}
             </div>
 

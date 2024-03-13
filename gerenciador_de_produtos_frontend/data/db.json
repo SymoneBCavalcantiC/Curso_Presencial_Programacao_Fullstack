@@ -25,7 +25,6 @@
       "id": "S4unc4L"
     }
   ],
-  
   "products": [
     {
       "id": 100,
@@ -64,7 +63,6 @@
       "id": 105
     }
   ],
-
   "costumers": [
     {
       "id": 1,
@@ -123,13 +121,26 @@
       "name": "Eduardo Flávio",
       "cpf": "070.248.679-57",
       "email": "edflavio@gmail.com",
-      "zipcode": "71.515-706", 
+      "zipcode": "71.515-706",
       "street": "Quadra SHIN EQL 9/11",
       "number": "5500",
       "neighborhood": "Setor de Habitações Individuais Norte",
       "city": "Brasília",
       "state": "Distrito Federal",
       "country": "Brasil"
+    },
+    {
+      "name": "Symone Batista Cavalcanti Costa",
+      "cpf": "009.593.714-51",
+      "email": "sbcavalcantic@gmail.com",
+      "zipcode": "58038182",
+      "street": "Avenida Umbuzeiro",
+      "number": "850",
+      "neighborhood": "Manaíra",
+      "city": "João Pessoa",
+      "state": "PB",
+      "country": "Brasil",
+      "id": 6
     }
   ]
 }
