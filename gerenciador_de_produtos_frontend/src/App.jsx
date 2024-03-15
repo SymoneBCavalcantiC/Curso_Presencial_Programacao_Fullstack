@@ -8,6 +8,7 @@ import './App.css'
 import ProductList from './pages/Product/ProductList';
 import ProductForm from './pages/Product/ProductForm';
 import CostumerForm from './pages/Costumer/CostumerForm';
+import CostumerList from './pages/Costumer/CostumerList';
 
 
 const App = () => {
@@ -24,6 +25,8 @@ const App = () => {
         <Route path="/listar-produtos" element={<ProductList />} />
         <Route path="/editar-produto/:id" element={<ProductForm />} />
         <Route path="/add-cliente" element={<CostumerForm />} />
+        <Route path="/listar-clientes" element={<CostumerList />} />
+        <Route path="/editar-cliente/:id" element={<CostumerForm />} />
       </Routes>
       </div>
     </BrowserRouter>
